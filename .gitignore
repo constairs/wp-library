@@ -1,0 +1,13 @@
+/node_modules/
+/.idea/
+.history
+/dist/
+/build/
+/coverage/
+npm-debug.log
+/.vscode/
+.cache
+.eslintcache
+
+# ignore macOS file
+.DS_Store
