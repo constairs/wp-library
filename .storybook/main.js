@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: [
     "../src/**/*.stories.mdx",
@@ -23,7 +25,16 @@ module.exports = {
             modules: true,
           }
         },
-        'sass-loader'
+        {
+          loader: 'resolve-url-loader',
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            implementation: require('sass'),
+            sourceMap: true,
+          }
+        }
       ],
     })
 // 'resolve-url-loader',

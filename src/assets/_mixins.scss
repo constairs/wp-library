@@ -1,0 +1,43 @@
+@mixin bevel($color, $width: 2px, $angleSize: 20%) {
+  $rgba: rgba($color, 1);
+  $rgbaBackground: rgba($color, .7);
+
+  position: relative;
+  border: none;
+  border-left: $width solid $rgba;
+  overflow: hidden;
+  opacity: .75;
+  transition: opacity .3s;
+
+  &:after, &:before {
+    position: absolute;
+    content: '';
+    width: calc(100% - $width);
+    left: 0px;
+    z-index: -1;
+    background-color: $rgbaBackground;
+    background-clip: padding-box;
+  }
+
+  &:before {
+    height: calc(80% - $width * 2);
+    top: 0px;
+    border: $width solid $rgba;
+    border-width: $width $width 0px 0px;
+    background-clip: padding-box;
+  }
+
+  &:after {
+    height: $angleSize;
+    bottom: 0px;
+    border: $width solid $rgba;
+    border-width: 0px $width * 1.5 $width 0px;
+    transform: skew(-45deg);
+    transform-origin: right top;
+    background-clip: padding-box;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

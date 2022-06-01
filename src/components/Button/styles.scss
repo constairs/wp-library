@@ -1,8 +1,54 @@
-@import url('../../assets/main.scss');
+@import '../../assets/main.scss';
 
 .btn {
-  color: #fff;
-  background-color: #000;
+  color: $main;
+  background-color: $second;
+  border: none;
   font-family: Rajhani;
-  font-size: 32px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-base {
+  color: $main;
+  background-color: $second;
+  border: none;
+  font-family: Rajhani;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-base-inversed {
+  color: $accent;
+  background-color: $main;
+}
+
+.btn-ghost {
+  color: $main;
+  background-color: transparent;
+  border: 2px solid $second;
+  padding: .5rem .75rem;
+}
+
+.btn-ghost-inversed {
+  color: $accent;
+  background-color: $main;
+  border: 2px solid currentColor;
+  padding: .5rem .75rem;
+}
+
+.btn-bevel {
+  color: $main;
+  background-color: transparent;
+  padding: .825rem 2rem;
+  font-weight: 500;
+  @include bevel($second);
+}
+
+.btn-bevel-inversed {
+  color: $accent;
+  background-color: transparent;
+  padding: .825rem 2rem;
+  font-weight: 500;
+  @include bevel($main);
 }

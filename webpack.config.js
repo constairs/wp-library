@@ -58,7 +58,15 @@ module.exports = {
               },
             },
           },
-          'sass-loader'
+          {
+            loader: 'resolve-url-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            }
+          }
         ],
         exclude: ['/src/components/', /node_modules/]
       },
