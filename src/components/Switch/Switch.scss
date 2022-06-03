@@ -14,12 +14,82 @@
     @include bevel($main, $dark);
     width: 6rem;
     height: 2rem;
+    line-height: 2rem;
     display: block;
-  }
+    position: relative;
+    vertical-align: middle;
+    user-select: none;
 
-  input {
-    display: none;
+    input[type=checkbox] {
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .switchToggler {
+      @include bevel($main);
+      display: inline-block;
+      width: 35%;
+      height: calc(100% - 7px);
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      // box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+      transition: .15s;
+    }
+
+    input[type=checkbox]:checked + .switchToggle {
+      background: #9ABEF7;
+    }
+
+    input[type=checkbox]:checked + .switchToggler {
+      transform: translateX(100% + 35%);
+    }
+
+    input[type="checkbox"]:not(:disabled) + .switchToggle {
+      cursor: pointer;
+      border-color: rgba(0, 0, 0, .3);
+    }
+
+    input[type="checkbox"]:not(:disabled):active + .switchToggle:before,
+    input[type="checkbox"]:not(:disabled):focus + .switchToggle:before {
+      //animation: checkbox-active-on 0.5s forwards linear;
+    }
+
+    input[type="checkbox"]:not(:disabled):checked:active + .switchToggle:before,
+    input[type="checkbox"]:not(:disabled):checked:focus + .switchToggle:before {
+      //animation: checkbox-active-off 0.5s forwards linear;
+    }
+
+    input[type=checkbox]:disabled + .switchToggle {
+      filter: grayscale(60%);
+      border-color: rgba(0, 0, 0, .1);
+    }
+
+    input[type=checkbox]:disabled + .switchToggle:before {
+      background: #eee;
+    }
   }
 }
 
+@keyframes checkbox-active-on {
+	0% {
+		box-shadow: 0 0 0 0 rgba(212,212,212, 0);
+	}
+	99% {
+		box-shadow: 0 0 0 10px rgba(212,212,212, 0.5);
+	}
+}
 
+
+@keyframes checkbox-active-off {
+	0% {
+		box-shadow: 0 0 0 0 rgba(154,190,247, 0);
+	}
+	99% {
+		box-shadow: 0 0 0 10px rgba(154,190,247, 0.5);
+	}
+}

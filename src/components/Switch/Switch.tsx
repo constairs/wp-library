@@ -19,7 +19,10 @@ export const Switch: React.FC<ISwitchProps> = ({
 }) => (
     <div className={css.switch} id={id}>
       <label htmlFor={name} className={css.switchState}>{withStateText && (checked ? 'on' : 'off')}</label>
-      <label htmlFor={name} className={css.switchLabel} />
-      <input id={name} name={name} type="checkbox" checked={checked} onChange={onChange} />
+      <label htmlFor={name} className={css.switchLabel}>
+        <input id={name} name={name} type="checkbox" checked={checked} onChange={onChange} />
+        <span className={css.switchToggler}></span>
+        <span className={css.switchToggle}></span>
+      </label>
     </div>
   );

@@ -1,4 +1,4 @@
-@mixin bevel($color, $bgColor: rgba($color, .7), $width: 2px, $angleSize: 20%) {
+@mixin bevel($color, $bgColor: rgba($color, .7), $width: 2px, $angleSize: 20%, $noHover: false) {
   $rgba: rgba($color, 1);
 
   position: relative;
@@ -37,6 +37,8 @@
   }
 
   &:hover {
-    opacity: 1;
+    @if not noHover {
+      opacity: 1;
+    }
   }
 }
