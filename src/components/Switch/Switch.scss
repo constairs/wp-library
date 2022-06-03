@@ -1,0 +1,25 @@
+@import '../../assets/main.scss';
+
+.switch {
+  display: flex;
+  align-items: center;
+
+  .switchState {
+    font-size: 1.5rem;
+    color: $main;
+    margin-right: .75rem;
+  }
+
+  .switchLabel {
+    @include bevel($main, $dark);
+    width: 6rem;
+    height: 2rem;
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+

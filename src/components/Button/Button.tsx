@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
-import css from './styles.scss';
+import css from './Button.scss';
 
 interface IButtonProps {
   children: React.ReactNode | React.ReactNode[];

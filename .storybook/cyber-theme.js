@@ -3,7 +3,7 @@ import { create } from '@storybook/theming';
 
 export default create({
   // appBg: 'white',
-  // appContentBg: 'silver',
+  appContentBg: '#401c24',
   // appBorderColor: 'grey',
   // appBorderRadius: 4,
   base: 'dark',
@@ -29,5 +29,5 @@ export default create({
   inputBg: '#3f1c24',
   inputBorder: '#ff635b',
   inputTextColor: '#29fefe',
-  inputBorderRadius: 4
+  inputBorderRadius: 4,
 });

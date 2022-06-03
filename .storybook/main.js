@@ -39,5 +39,5 @@ module.exports = {
     })
 // 'resolve-url-loader',
     return config;
-  }
+  },
 }

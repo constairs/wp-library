@@ -1,6 +1,5 @@
-@mixin bevel($color, $width: 2px, $angleSize: 20%) {
+@mixin bevel($color, $bgColor: rgba($color, .7), $width: 2px, $angleSize: 20%) {
   $rgba: rgba($color, 1);
-  $rgbaBackground: rgba($color, .7);
 
   position: relative;
   border: none;
@@ -15,7 +14,7 @@
     width: calc(100% - $width);
     left: 0px;
     z-index: -1;
-    background-color: $rgbaBackground;
+    background-color: $bgColor;
     background-clip: padding-box;
   }
 
