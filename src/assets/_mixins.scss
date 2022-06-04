@@ -3,7 +3,8 @@
 
   position: relative;
   border: none;
-  border-left: $width solid $rgba;
+  // border-left: $width solid $rgba;
+  box-shadow: -$width 0 0 0 $rgba;
   overflow: hidden;
   opacity: .75;
   transition: opacity .3s;
@@ -27,7 +28,7 @@
   }
 
   &:after {
-    height: $angleSize;
+    height: $angleSize + 1;
     bottom: 0px;
     border: $width solid $rgba;
     border-width: 0px $width * 1.5 $width 0px;
