@@ -1,20 +1,41 @@
 @font-face {
-  font-family: Rajhani;
-  src: url('./fonts/Rajdhani/Rajdhani-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Book.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Rajhani;
-  src: url('./fonts/Rajdhani/Rajdhani-Medium.woff') format('woff');
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Rajhani;
-  src: url('./fonts/Rajdhani/Rajdhani-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BlenderPro;
+  src: url('./fonts/Blender-Pro/BlenderPro-Bold.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
 }

@@ -43,3 +43,9 @@
     }
   }
 }
+
+
+@mixin bevel-solid ($color, $size, $direction) {
+  background: $color;
+  background: linear-gradient($direction, transparent $size, $color 0);
+}

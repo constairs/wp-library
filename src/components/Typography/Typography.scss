@@ -1,0 +1,69 @@
+@import '../../assets/main.scss';
+
+.p {
+  font-size: 16px;
+
+  &-xs {
+    font-size: 12px;
+  }
+
+  &-sm {
+    font-size: 14px;
+  }
+
+  &-lg {
+    font-size: 18px;
+  }
+
+  &-xl {
+    font-size: 18px;
+  }
+}
+
+.h1 {
+  &-xs {
+    font-size: 24px;
+  }
+
+  &-sm {
+    font-size: 32px;
+  }
+
+  &-lg {
+    font-size: 56px;
+  }
+
+  &-xl {
+    font-size: 72px;
+  }
+
+  font-size: 48px;
+}
+
+.h2 {
+
+}
+
+.h3 {
+
+}
+
+.h4{
+
+}
+
+.h5 {
+
+}
+
+.h6 {
+
+}
+
+.main {
+  color: $main;
+}
+
+.accent {
+  color: $accent;
+}
