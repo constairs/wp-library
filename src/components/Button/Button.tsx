@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import cn from 'classnames';
 import css from './Button.scss';
 
-interface IButtonProps {
+type IButtonProps = {
   children: React.ReactNode | React.ReactNode[];
   appearance?: 'base' | 'ghost' | 'bevel';
   inversed?: boolean;

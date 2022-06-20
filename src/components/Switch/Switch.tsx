@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './Switch.scss';
 
-interface ISwitchProps {
+type ISwitchProps = {
   id?: string;
   name: string;
   labelText?: string;
