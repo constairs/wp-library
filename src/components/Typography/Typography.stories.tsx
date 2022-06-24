@@ -3,11 +3,11 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Typography } from './Typography';
 
-// export default {
-//   title: 'Example/Typography',
-//   component: Typography,
-//   argTypes: {},
-// } as ComponentMeta<typeof Typography>;
+export default {
+  title: 'Example/Typography',
+  component: Typography.H1,
+  argTypes: {},
+} as ComponentMeta<typeof Typography.H1>;
 
 const Template: ComponentStory<typeof Typography.P> = (args) => (
   <>

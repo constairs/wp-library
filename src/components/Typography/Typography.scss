@@ -1,5 +1,25 @@
 @import '../../assets/main.scss';
 
+$fontSizeXs: 12px;
+$fontSizeSm: 14px;
+$fontSizeMd: 16px;
+$fontSizeLg: 18px;
+$fontSizeXl: 24px;
+
+$font-size: (
+  Xs: $fontSizeXs,
+  Sm: $fontSizeSm,
+  Md: $fontSizeMd,
+  Lg: $fontSizeLg,
+  Xl: $fontSizeXl,
+);
+
+@each $key, $value in $font-size {
+  .size#{$key} {
+    font-size: $value;
+  }
+}
+
 .p {
   font-size: 16px;
 
